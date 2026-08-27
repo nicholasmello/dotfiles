@@ -1,0 +1,37 @@
+[user]
+	name = Nick Mello
+	email = nick@nmello.dev
+	signingkey = A4007252A92585A8
+[commit]
+	template = ~/.gitmessage
+	gpgsign = true
+	verbose = true
+[merge]
+	tool = nvimdiff
+[gpg]
+	program = gpg
+[push]
+	autoSetupRemote = true
+[rebase]
+	autosquash = true
+	updateRefs = true
+	rebaseMerges = true
+	autoStash = true
+	rescheduleFailedExec = true
+	backend = merge
+[core]
+	excludesFile = ~/.gitignore
+[branch]
+	sort = committerdate
+[column]
+	ui = auto
+[tag]
+	sort = version:refname
+[versionsort]
+	suffix = -rc
+	suffix = _rc
+[fetch]
+	all = true
+[rerere]
+	enabled = true
+	autoUpdate = true

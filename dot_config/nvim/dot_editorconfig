@@ -1,0 +1,47 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+root = true
+
+# Neovim Lua config files
+[*.lua]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+# Vim script files
+[*.vim]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+# Shell scripts
+[*.sh]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+insert_final_newline = true
+charset = utf-8
+
+# Git commit messages
+[COMMIT_EDITMSG]
+trim_trailing_whitespace = false
+insert_final_newline = true
+charset = utf-8
+
+# Generic defaults for other text files
+[*]
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
