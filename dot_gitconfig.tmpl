@@ -1,15 +1,22 @@
 [user]
 	name = Nick Mello
+{{- if eq .chezmoi.username "nicholasmello" }}
 	email = nick@nmello.dev
 	signingkey = A4007252A92585A8
+{{- else }}
+[user]
+    email = nicholas.mello@collins.com
+{{- end }}
 [commit]
 	template = ~/.gitmessage
 	gpgsign = true
 	verbose = true
 [merge]
 	tool = nvimdiff
+{{- if eq .chezmoi.username "nicholasmello" }}
 [gpg]
 	program = gpg
+{{- end }}
 [push]
 	autoSetupRemote = true
 [rebase]
