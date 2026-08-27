@@ -7,4 +7,4 @@ if status is-interactive
     set -Ux VISUAL nvim
 end
 
-set -gx PATH "/home/nicholasmello/.pixi/bin" $PATH
+set -gx PATH "~/.pixi/bin" $PATH

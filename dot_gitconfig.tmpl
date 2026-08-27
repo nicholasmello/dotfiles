@@ -4,12 +4,12 @@
 	email = nick@nmello.dev
 	signingkey = A4007252A92585A8
 {{- else }}
-[user]
     email = nicholas.mello@collins.com
 {{- end }}
 [commit]
 	template = ~/.gitmessage
-	gpgsign = true
+{{- if eq .chezmoi.username "nicholasmello" }}
+	gpgsign = true {{- end }}
 	verbose = true
 [merge]
 	tool = nvimdiff
@@ -42,3 +42,5 @@
 [rerere]
 	enabled = true
 	autoUpdate = true
+[difftool]
+       prompt = false
