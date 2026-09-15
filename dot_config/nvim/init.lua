@@ -16,6 +16,8 @@ vim.api.nvim_set_hl(0, "ColorColumn", { ctermbg = 232, bg = "#808080" })
 vim.opt.clipboard = "unnamedplus"
 vim.wo.relativenumber = true
 
+vim.opt.scrolloff = 8
+
 vim.g.mapleader = ";"
 
 -- Get rid of highlighting with enter
